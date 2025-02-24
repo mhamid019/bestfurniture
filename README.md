@@ -1,2 +1,0 @@
-# mycoding
-my first website
