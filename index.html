@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="furniture Single Page Website">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>furniture</title>
@@ -20,8 +20,8 @@
                         <p><a id="logo" href="#">FiU</a></p>
                     </div>
                     <div class="col-8">
-                        <button class="toggle"><span></span><span></span><span></span></button>
-                        <nav class="collapse">
+                        <button class="toggle" onclick="openNav()"><span></span><span></span><span></span></button>
+                        <nav class="collapse" id="navBar">
                             <ul class="flex justify-space-bet">
                                 <li><a href="#home">home</a></li>
                                 <li><a href="#about">About</a></li>
@@ -40,7 +40,7 @@
     
     <div class="wrap-1">
         <div class="container-14">
-            <div class="banner">
+            <div class="banner" role="banner">
                 <div class="row">
                     <div class="col-4 col-t-12">
                         <h1 class="heading">
@@ -51,9 +51,7 @@
                         <a class="btn" href="#">Contact Us</a>
                     </div>
                     <div class="col-8 col-t-12">
-                        
-                            <img src="/img/couch.png" alt="couch" width="872" height="487" class="img-resp">
-                        
+                        <img src="/img/couch.png" alt="couch" width="872" height="487" class="img-resp">
                     </div>
                 </div>
             </div>
@@ -174,12 +172,14 @@
                     <p class="heading">Contact Us</p>
                     <div class="form">
                         <form action="#">
-                            <input type="text" placeholder="Name" required>
-                            <input type="tel" placeholder="Phone Number" required>
-                            <input type="email" placeholder="Email" required>
-                            <textarea name="msg" id="msg" cols="30" rows="4">
-                                Write here..
-                            </textarea>
+                            <label for="fname"></label>
+                            <input type="text" placeholder="Name" name="fname" id="fname" required>
+                            <label for="phone"></label>
+                            <input type="tel" placeholder="Phone Number" name="phone" id="phone" required>
+                            <label for="email"></label>
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+                            <label for="msg"></label>
+                            <textarea name="msg" id="msg" cols="30" rows="4">Write here..</textarea>
                             <div class="text-center">
                                 <input type="submit" class="btn">
                             </div>
@@ -245,10 +245,10 @@
                     <div class="text-center">
                         <h3>Social Meida</h3>
                         <div class="social flex justify-around">
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-linkedin"></i></a>
-                            <a href=""><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/login/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://x.com/?lang=en"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/login/in"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -272,6 +272,20 @@
         </div>
     </footer>
 
+    <!-- go to top button-->
     <a id="home" href="#"><span id="top" class="fa fa-arrow-up"></span></a>
+
+    <script>
+        // code to open navBar at the screen 980
+        function openNav() {
+            let x = document.getElementById("navBar");
+            if(x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        };
+
+    </script>
 </body>
 </html>
