@@ -54,6 +54,7 @@ header .toggle span {
 
 .wrap-1 {background: var(--grad); padding: 10rem 0 2rem;}
 .wrap-1 .heading {margin-top: 2rem;}
+.wrap-1 .couch {margin-top: 2rem;}
 .banner p {margin: 60px 0;}
 .wrap-1 .pager {margin-top: 50px;}
 .pager a {
