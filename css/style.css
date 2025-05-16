@@ -294,6 +294,11 @@ footer {background: #fff; padding: 25px 2rem; color: #333;}
 
     header .toggle {display: block;}
     .heading {font-size: 40px;}
+
+    header nav a {
+        line-height: 50px;
+    }
+
     .wrap-2 {margin: 3rem;}
     .wrap-2 .content {
         margin-top: 5rem;
@@ -306,9 +311,6 @@ footer {background: #fff; padding: 25px 2rem; color: #333;}
     html {font-size: 12px;}
     .col-m-12 {grid-column: span 12;}
     .col-m-6 {grid-column: span 6;}
-    /* .wrap-2, .wrap-3, .wrap-4, .wrap-5, .wrap-6 {
-        margin: 2rem 0;
-    } */
     .banner p {margin: 2rem 0;}
     .wrap-2 {padding: 2rem 0;}
     .wrap-3 {padding: 2rem 0;}
